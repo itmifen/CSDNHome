@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="48dp"
+                  android:background="#000000"
+                  android:id="@+id/detail_head"
+                  android:gravity="center_vertical">
+
+        <TextView
+                android:text="@string/app_name"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:textColor="#ffffff"
+                android:textSize="22sp"></TextView>
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_title"
+            android:layout_below="@+id/detail_head"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="22dp"
+            android:gravity="center"
+            />
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider"
+            />
+    <WebView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/detail_detail"
+            android:layout_below="@+id/detail_title"
+            />
+    <ProgressBar
+            android:id="@+id/detail_progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  android:layout_centerInParent="true"
+            />
+</RelativeLayout>
