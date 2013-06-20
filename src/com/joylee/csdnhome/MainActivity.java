@@ -110,6 +110,10 @@ public class MainActivity extends Activity {
                     R.id.titletext, R.id.datetimetext});
             newslist.setAdapter(adapter);
             }
+            else
+            {
+                Toast.makeText(getApplicationContext(),"暂无数据",Toast.LENGTH_LONG).show();
+            }
 
             newslist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
