@@ -1,6 +1,8 @@
 package com.joylee.csdnhome;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -25,6 +27,15 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import com.joylee.handler.*;
 
 public class MainActivity extends Activity {
 
@@ -55,19 +66,44 @@ public class MainActivity extends Activity {
     private List<Map<String, String>> getData() {
         List<Map<String, String>> list = new ArrayList<Map<String, String>>();
         //InputStream stream = getResources().openRawResource(R.raw.rss_lastnews);
-        InputStream stream = null;
+//        InputStream stream = null;
+//        try {
+//            URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
+//            // 打开URL链接
+//            URLConnection ucon = myURL.openConnection();
+//            // 使用InputStream，从URLConnection读取数据
+//            stream = ucon.getInputStream();
+//        } catch (Exception e) {
+//
+//            return null;
+//
+//        }
+//        List<newsentity> channlist = com.joylee.common.DomParserHelper.getChannelList(stream);
+
+        List<newsentity> channlist=new ArrayList<newsentity>();
         try {
+//这里我们实现了本地解析，所以注掉了这个取网络数据的。
             URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
-            // 打开URL链接
-            URLConnection ucon = myURL.openConnection();
-            // 使用InputStream，从URLConnection读取数据
-            stream = ucon.getInputStream();
-        } catch (Exception e) {
-
-            return null;
-
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            SAXParser parser = factory.newSAXParser();
+            XMLReader reader = parser.getXMLReader();
+            rsshandler  handler = new rsshandler();
+            reader.setContentHandler(handler);
+           // InputSource is = new InputSource(this.getClassLoader().getResourceAsStream(""));//取得本地xml文件
+            InputStreamReader isr = new InputStreamReader(myURL.openStream(), "UTF-8");
+            InputSource is = new InputSource(isr);
+            reader.parse(is);
+            channlist=handler.getNewslist();
+        } catch (ParserConfigurationException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (SAXException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-        List<newsentity> channlist = com.joylee.common.DomParserHelper.getChannelList(stream);
 
         for (int i = 0; i < channlist.size(); i++) {
             Map<String, String> map = new HashMap<String, String>();
