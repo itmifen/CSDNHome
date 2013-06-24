@@ -89,10 +89,11 @@ public class MainActivity extends Activity {
             XMLReader reader = parser.getXMLReader();
             rsshandler  handler = new rsshandler();
             reader.setContentHandler(handler);
-           // InputSource is = new InputSource(this.getClassLoader().getResourceAsStream(""));//取得本地xml文件
-            InputStreamReader isr = new InputStreamReader(myURL.openStream(), "UTF-8");
-            InputSource is = new InputSource(isr);
-            reader.parse(is);
+           // InputSource is = new InputSource(this.getClassLoader().getResourceAsStream("1.xml"));//取得本地xml文件
+           // InputStreamReader isr = new InputStreamReader(myURL.openStream(), "UTF-8");
+          //  InputSource is = new InputSource(isr);
+            //parser.parse(is,handler);
+            reader.parse(new InputSource(myURL.openStream()));
             channlist=handler.getNewslist();
         } catch (ParserConfigurationException e) {
             // TODO Auto-generated catch block
@@ -100,6 +101,7 @@ public class MainActivity extends Activity {
         } catch (SAXException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+            Log.v("error",e.toString());
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

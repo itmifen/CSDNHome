@@ -66,7 +66,7 @@ public class rsshandler extends DefaultHandler {
            newslist.add(newsinfo);
             newsinfo=null;
         }
-        tempString=null;
+        tempString="";
 
     }
 
@@ -82,7 +82,7 @@ public class rsshandler extends DefaultHandler {
             }
             if(tempString.equals(urlSTRING))
             {
-                newsinfo.setUrl(urlSTRING);
+                newsinfo.setUrl(valuestring);
             }
 
         }
