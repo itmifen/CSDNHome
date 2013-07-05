@@ -42,7 +42,8 @@ public class rsshandler extends DefaultHandler {
 
     public List<newsentity> getNewslist()
     {
-        return newslist;
+        NewsManager manager=new NewsManager(applicationContext);
+       return   manager.GetList();
     }
 
     @Override
@@ -76,10 +77,13 @@ public class rsshandler extends DefaultHandler {
         // TODO Auto-generated method stub
         if(itemSTRING.equals(localName)&&newsinfo!=null)
         {
-           newslist.add(newsinfo);
-            NewsManager manager=new NewsManager(applicationContext);
-            manager.InsertNews(newsinfo);
+          // newslist.add(newsinfo);
 
+            NewsManager manager=new NewsManager(applicationContext);
+            if(manager.GetInfoByTitle(newsinfo.getTitle())==null)
+            {
+                manager.InsertNews(newsinfo);
+            }
             newsinfo=null;
         }
         tempString="";
@@ -108,14 +112,6 @@ public class rsshandler extends DefaultHandler {
             {
                 valuestring=StringUtil.GetNowTime();
                 newsinfo.setNewsDatetime(valuestring);
-//                SimpleDateFormat sdf=new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.US);
-//                SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyMMddkkmmss");
-//                try {
-//                String newdate=sdf.format(sdf2.parse(valuestring));
-//                newsinfo.setNewsDatetime(newdate);
-//                } catch (ParseException e) {
-//                    e.printStackTrace();
-//                }
             }
 
         }

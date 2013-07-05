@@ -16,14 +16,29 @@
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="csdn" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba4264ed-b346-4b30-8b13-636c123ca8cd" name="Default" comment="" />
+    <list default="true" id="ba4264ed-b346-4b30-8b13-636c123ca8cd" name="Default" comment="">
+      <change type="DELETED" beforePath="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\CSDNHome\res\layout\numberkeyboard.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\CSDNHome\res\layout\numbertest.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\CSDNHome\src\1.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/joylee/csdnhome/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/joylee/csdnhome/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/joylee/csdnhome/Manifest.java" afterPath="$PROJECT_DIR$/gen/com/joylee/csdnhome/Manifest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" afterPath="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/joylee/csdnhome/R.java" afterPath="$PROJECT_DIR$/gen/com/joylee/csdnhome/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/handler/rsshandler.java" afterPath="$PROJECT_DIR$/src/com/joylee/handler/rsshandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="CSDNHome.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/newslistcontent.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371282877256" ignored="false" />
-    <file path="/fragment.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373005088644" ignored="false" />
+    <file path="/fragment.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373038167864" ignored="false" />
     <file path="/main.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371292433859" ignored="false" />
     <file path="/MainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373007666902" ignored="false" />
-    <file path="/Dummy.txt" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372834179838" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373039639078" ignored="false" />
     <file path="/NewsdetailActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371309610769" ignored="false" />
     <file path="/DomParserHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371743233515" ignored="false" />
     <file path="/newsentity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372997767769" ignored="false" />
@@ -33,7 +48,7 @@
     <file path="/strings.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371289188760" ignored="false" />
     <file path="/HtmlHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371308799998" ignored="false" />
     <file path="/Config.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371296188548" ignored="false" />
-    <file path="/rsshandler.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373007297236" ignored="false" />
+    <file path="/rsshandler.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373039558700" ignored="false" />
     <file path="/numberkeyboard.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372836046873" ignored="false" />
     <file path="/a.dummy" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372821940299" ignored="false" />
     <file path="/numberbtnstyle.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372824686746" ignored="false" />
@@ -41,7 +56,7 @@
     <file path="/numberkeyboard.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372836163041" ignored="false" />
     <file path="/numbertest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372834447080" ignored="false" />
     <file path="/DbHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372996731494" ignored="false" />
-    <file path="/NewsManager.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372997849448" ignored="false" />
+    <file path="/NewsManager.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373039372286" ignored="false" />
     <file path="E:/segtong/segtong/bin/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373008180175" ignored="false" />
     <file path="E:/segtong/segtong/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373008180175" ignored="false" />
     <file path="E:/segtong/segtong/build.gradle" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373008194659" ignored="false" />
@@ -111,12 +126,117 @@
     <favorites_list name="CSDNHome" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="rsshandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/handler/rsshandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="21" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="37" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1869#1881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="66" selection-start="2336" selection-end="2380" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#2254#2266#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractCursor.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/AbstractCursor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="19" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassLoader.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/java/lang/ClassLoader.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="30" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLiteCursor.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/sqlite/SQLiteCursor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="15" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashMap.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/java/util/HashMap.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="11" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DbHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/common/DbHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="0" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -129,14 +249,14 @@
         <option value="$PROJECT_DIR$/res/layout/numberkeyboard.xml" />
         <option value="$PROJECT_DIR$/src/com/joylee/control/numberkeyboard.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/entity/newsentity.java" />
-        <option value="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/com/joylee/common/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/joylee/handler/rsshandler.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/common/DbHelper.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
+        <option value="$PROJECT_DIR$/src/com/joylee/handler/rsshandler.java" />
       </list>
     </option>
   </component>
@@ -146,10 +266,10 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1296" />
+    <option name="height" value="776" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -175,6 +295,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -218,33 +339,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="joylee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="joylee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csdnhome" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -258,32 +357,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="joylee" />
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="E:/segtong/segtong" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -400,7 +509,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
       <option name="COMMAND_LINE" value="" />
@@ -409,6 +518,8 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -471,11 +582,14 @@
       <workItem from="1372995162082" duration="4557000" />
       <workItem from="1373005807851" duration="2627000" />
       <workItem from="1373008460566" duration="716000" />
+      <workItem from="1373036725438" duration="250000" />
+      <workItem from="1373037020132" duration="276000" />
+      <workItem from="1373037372546" duration="2277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57530000" />
+    <option name="totallyTimeSpent" value="60333000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -498,23 +612,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.52443" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40890124" sideWeight="0.77516234" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4087948" sideWeight="0.77516234" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31571627" sideWeight="0.50143474" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17891817" sideWeight="0.7394481" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.47557002" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4446254" sideWeight="0.54723126" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327212" sideWeight="0.3603679" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928162" sideWeight="0.68428373" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.7617504" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21449067" sideWeight="0.8205841" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31293464" sideWeight="0.49784482" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21498372" sideWeight="0.6872964" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31270358" sideWeight="0.49784482" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31348637" sideWeight="0.68706536" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32137734" sideWeight="0.68706536" order="3" side_tool="false" content_ui="tabs" />
@@ -522,7 +637,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31154382" sideWeight="0.50143677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -588,67 +702,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/numbertest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="15" selection-start="433" selection-end="433" vertical-scroll-proportion="0.2972973" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/numberkeyboard.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="1083" selection-end="1090" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/numberbtnstyle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/entity/newsentity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/common/NetHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/common/DomParserHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="53" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#617#629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/common/HtmlHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="53" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="41" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="24" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.04710921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -661,37 +714,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/common/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="114" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="0.5549133">
-          <folding />
-        </state>
+        <state line="33" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="0.5549133" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/common/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/common/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/java/lang/ClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="30" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/AbstractCursor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="19" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/java/util/HashMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/sqlite/SQLiteCursor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="15" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/AbstractWindowedCursor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3313253">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="56" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.3240059">
-          <folding />
+        <state line="80" column="37" selection-start="2678" selection-end="2678" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1869#1881#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/handler/rsshandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="52" selection-start="2948" selection-end="2959" vertical-scroll-proportion="0.30057803">
+        <state line="44" column="21" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="66" selection-start="2336" selection-end="2380" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2254#2266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
