@@ -7,7 +7,9 @@ public class newsentity {
 	private String url;
 	private String title;
 	private String detail;
+    private String anthor;
     private String newsdatetime;
+    private String newsimage;
 	
 	public String getId() {
 		return id;
@@ -43,6 +45,27 @@ public class newsentity {
     public  void setNewsDatetime(String newsdatetime)
     {
         this.newsdatetime=newsdatetime;
+    }
+
+
+    public String getAnthor()
+    {
+        return anthor;
+    }
+
+    public  void setAnthor(String anthor)
+    {
+        this.anthor=anthor;
+    }
+
+    public String getNewsimage()
+    {
+        return newsimage;
+    }
+
+    public  void setNewsimage(String newsimage)
+    {
+        this.newsimage=newsimage;
     }
 
 }

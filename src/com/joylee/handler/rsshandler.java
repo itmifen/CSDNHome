@@ -4,14 +4,20 @@ package com.joylee.handler;
  * Created by Administrator on 13-6-23.
  */
 
+import android.content.Context;
+import com.joylee.common.StringUtil;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import com.joylee.entity.*;
+import com.joylee.business.*;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 
 public class rsshandler extends DefaultHandler {
@@ -25,6 +31,13 @@ public class rsshandler extends DefaultHandler {
 
     public newsentity newsinfo;
     private String tempString;
+
+    private Context applicationContext;
+
+    public rsshandler(Context context) {
+        applicationContext = context;
+    }
+
 
 
     public List<newsentity> getNewslist()
@@ -64,6 +77,9 @@ public class rsshandler extends DefaultHandler {
         if(itemSTRING.equals(localName)&&newsinfo!=null)
         {
            newslist.add(newsinfo);
+            NewsManager manager=new NewsManager(applicationContext);
+            manager.InsertNews(newsinfo);
+
             newsinfo=null;
         }
         tempString="";
@@ -83,6 +99,23 @@ public class rsshandler extends DefaultHandler {
             if(tempString.equals(urlSTRING))
             {
                 newsinfo.setUrl(valuestring);
+            }
+            if(tempString.equals(authorSTRING))
+            {
+                newsinfo.setAnthor(valuestring);
+            }
+            if(tempString.equals(timeSTRING))
+            {
+                valuestring=StringUtil.GetNowTime();
+                newsinfo.setNewsDatetime(valuestring);
+//                SimpleDateFormat sdf=new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.US);
+//                SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyMMddkkmmss");
+//                try {
+//                String newdate=sdf.format(sdf2.parse(valuestring));
+//                newsinfo.setNewsDatetime(newdate);
+//                } catch (ParseException e) {
+//                    e.printStackTrace();
+//                }
             }
 
         }

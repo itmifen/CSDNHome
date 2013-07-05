@@ -5,10 +5,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 import com.joylee.common.NetHelper;
 import com.joylee.entity.newsentity;
@@ -47,6 +46,18 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
+                        SimpleDateFormat sdf=new SimpleDateFormat("ddd MMM dd HH:mm:ss PDT yyyy", Locale.US);
+                SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyMMddkkmmss");
+                try {
+                String newdate=sdf.format(sdf2.parse("Fri, 05 Jul 2013 14:07:40"));
+               Toast.makeText(getApplicationContext(),newdate,200).show();
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getApplicationContext(),e.toString(),2000).show();;
+                }
+
+
         NetHelper netHelper=new NetHelper();
        // Toast.makeText(MainActivity.this, String.valueOf(netHelper.isNetworkConnected(this)),200);
         if(netHelper.isNetworkConnected(this))
@@ -56,7 +67,7 @@ public class MainActivity extends Activity {
         new Thread(m).start();
         }
         else {
-            Toast.makeText(MainActivity.this,"网络无法连接，请检查网络",1000).show();
+            Toast.makeText(MainActivity.this,"缃戠粶鏃犳硶杩炴帴锛岃妫�煡缃戠粶",1000).show();
 
         }
 
@@ -69,9 +80,8 @@ public class MainActivity extends Activity {
 //        InputStream stream = null;
 //        try {
 //            URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
-//            // 打开URL链接
-//            URLConnection ucon = myURL.openConnection();
-//            // 使用InputStream，从URLConnection读取数据
+//            // 鎵撳紑URL閾炬�?//            URLConnection ucon = myURL.openConnection();
+//            // 浣跨敤InputStream锛屼粠URLConnection璇诲彇鏁版嵁
 //            stream = ucon.getInputStream();
 //        } catch (Exception e) {
 //
@@ -82,15 +92,14 @@ public class MainActivity extends Activity {
 
         List<newsentity> channlist=new ArrayList<newsentity>();
         try {
-//这里我们实现了本地解析，所以注掉了这个取网络数据的。
+//杩欓噷鎴戜滑瀹炵幇浜嗘湰鍦拌В鏋愶紝鎵�互娉ㄦ�?��嗚繖涓彇缃戠粶鏁版嵁鐨勩�
             URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser parser = factory.newSAXParser();
             XMLReader reader = parser.getXMLReader();
-            rsshandler  handler = new rsshandler();
+            rsshandler  handler = new rsshandler(getApplicationContext());
             reader.setContentHandler(handler);
-           // InputSource is = new InputSource(this.getClassLoader().getResourceAsStream("1.xml"));//取得本地xml文件
-           // InputStreamReader isr = new InputStreamReader(myURL.openStream(), "UTF-8");
+           // InputSource is = new InputSource(this.getClassLoader().getResourceAsStream("1.xml"));//鍙栧緱鏈�?��xml鏂囦�?           // InputStreamReader isr = new InputStreamReader(myURL.openStream(), "UTF-8");
           //  InputSource is = new InputSource(isr);
             //parser.parse(is,handler);
             reader.parse(new InputSource(myURL.openStream()));
@@ -130,13 +139,13 @@ public class MainActivity extends Activity {
             super(L);
         }
 
-        // 子类必须重写此方法,接受数据
+        // 瀛愮被蹇呴�?閲嶅啓姝ゆ柟娉�鎺ュ彈鏁版嵁
         @Override
         public void handleMessage(Message msg) {
             // TODO Auto-generated method stub
             Log.d("MyHandler", "handleMessage......");
             super.handleMessage(msg);
-            // 此处可以更新UI
+            // 姝ゅ鍙互鏇存柊UI
             findViewById(R.id.main_progressBar1).setVisibility(View.INVISIBLE);
 
             newslist = (ListView) findViewById(R.id.listView1);
@@ -150,7 +159,7 @@ public class MainActivity extends Activity {
             }
             else
             {
-                Toast.makeText(getApplicationContext(),"暂无数据",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"鏆傛棤鏁版嵁",Toast.LENGTH_LONG).show();
             }
 
             newslist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -188,7 +197,7 @@ public class MainActivity extends Activity {
 
             Log.d("thread.......", "mThread........");
             Message msg = new Message();
-            MainActivity.this.myHandler.sendMessage(msg); // 向Handler发送消息,更新UI
+            MainActivity.this.myHandler.sendMessage(msg); // 鍚慔andler鍙戦�娑堟伅,鏇存柊UI
 
         }
     }

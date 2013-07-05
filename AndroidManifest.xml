@@ -8,7 +8,7 @@
             android:minSdkVersion="8"
             android:targetSdkVersion="8"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <!-- 网络访问 -->
     <application
             android:allowBackup="false"
@@ -16,15 +16,15 @@
             android:label="@string/app_name"
             android:theme="@style/AppBaseTheme"
             >
-        <activity
-                android:name="com.joylee.csdnhome.MainActivity"
-               >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity android:name="com.joylee.csdnhome.NewsdetailActivity"></activity>
-    </application>
+        <activity android:name="com.joylee.csdnhome.MainActivity" > <!-- 设定第一个activity -->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+    <activity
+            android:name="com.joylee.csdnhome.NewsdetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+</application>
 
-</manifest>
+        </manifest>
