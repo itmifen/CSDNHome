@@ -25,6 +25,12 @@
     <activity
             android:name="com.joylee.csdnhome.NewsdetailActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
+                android:name="com.joylee.csdnhome.CsdnMainActivity"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
+                android:name="com.joylee.csdnhome.KrMainActivity"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
 </application>
 
         </manifest>

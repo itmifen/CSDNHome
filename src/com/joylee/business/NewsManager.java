@@ -67,11 +67,12 @@ public class NewsManager {
 
     public List<newsentity> GetList() {
         List<newsentity> list = new ArrayList<newsentity>();
-        newsentity info = new newsentity();
-        String sql = "select * from news order by id desc limit 40";
+
+        String sql = "select * from news order by id desc";
         Cursor result = dbHelper.query(sql);
         if (result.getCount() > 0) {
-            if (result.moveToNext()) {
+            while (result.moveToNext()) {
+                newsentity info = new newsentity();
                 info.setNewsDatetime(result.getString(result
                         .getColumnIndex("createtime")));
                 info.setTitle(result.getString(result

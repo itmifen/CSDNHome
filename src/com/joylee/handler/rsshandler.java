@@ -22,7 +22,6 @@ import java.util.Locale;
 
 public class rsshandler extends DefaultHandler {
 
-    public List<newsentity> newslist;
     private static  final String itemSTRING="item";
     private static  final String titleSTRING="title";
     private static final String authorSTRING="author";
@@ -40,16 +39,12 @@ public class rsshandler extends DefaultHandler {
 
 
 
-    public List<newsentity> getNewslist()
-    {
-        NewsManager manager=new NewsManager(applicationContext);
-       return   manager.GetList();
-    }
+
 
     @Override
     public void startDocument() throws SAXException {
         // TODO Auto-generated method stub
-        newslist=new ArrayList<newsentity>();
+
     }
 
     @Override
