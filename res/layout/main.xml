@@ -10,9 +10,7 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="48dp"
-            android:background="#000000"
-
+            android:layout_height="fill_parent"
             android:gravity="center_vertical">
         <RadioGroup
                 android:id="@+id/main_tab"
@@ -46,7 +44,7 @@
             <FrameLayout
                     android:id="@android:id/tabcontent"
                     android:layout_width="fill_parent"
-                    android:layout_height="0dip"
+                    android:layout_height="fill_parent"
                     android:layout_weight="1.0"/>
 
             <TabWidget

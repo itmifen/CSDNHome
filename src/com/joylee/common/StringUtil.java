@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 public class StringUtil {
 
 	/**
-	 * ×Ö·û´®×ªÕûÊı
+	 * å­—ç¬¦ä¸²è½¬æ•´æ•°
 	 * 
 	 * @param str
 	 * @param defValue
@@ -45,12 +45,12 @@ public class StringUtil {
 			'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6',
 			'7', '8', '9' };
 
-	// ÊÇ·ñÎª¿Õ£¬trueÎª¿ÕÖµ
+	// æ˜¯å¦ä¸ºç©ºï¼Œtrueä¸ºç©ºå€¼
 	public static boolean isEmpty(String str) {
 		return str == null || str.trim().length() == 0;
 	}
 
-	// ×Ö·û´®ÊÇ·ñÏàÍ¬£¬true±íÊ¾ÏàÍ¬
+	// å­—ç¬¦ä¸²æ˜¯å¦ç›¸åŒï¼Œtrueè¡¨ç¤ºç›¸åŒ
 	public static boolean isEquals(String str1, String str2) {
 		if (str1 == str2) {
 			return true;
@@ -62,7 +62,7 @@ public class StringUtil {
 		}
 	}
 
-	// ÊÇ·ñÎªÊı×Ö£¬true±íÊ¾Îª´¿Êı×Ö
+	// æ˜¯å¦ä¸ºæ•°å­—ï¼Œtrueè¡¨ç¤ºä¸ºçº¯æ•°å­—
 	public static boolean isNumeric(String str) {
 		if (str == null) {
 			return false;
@@ -75,7 +75,7 @@ public class StringUtil {
 		return true;
 	}
 
-	// »ñÖ¸¶¨³¤¶ÈÈ¡Ëæ»úÊı
+	// è·æŒ‡å®šé•¿åº¦å–éšæœºæ•°
 	public static String getRandomString(int length) {
 		Random random = new Random(System.currentTimeMillis());
 		byte[] randomBytes = new byte[length];
@@ -86,14 +86,14 @@ public class StringUtil {
 	}
 
 	/**
-	 * ½«UMTÊ±¼ä×ª»»Îª±¾µØÊ±¼ä
+	 * å°†UMTæ—¶é—´è½¬æ¢ä¸ºæœ¬åœ°æ—¶é—´
 	 * 
 	 * @param str
 	 * @return
 	 * @throws java.text.ParseException
 	 */
 	public static Date ParseUTCDate(String str) {
-		// ¸ñÊ½»¯2012-03-04T23:42:00+08:00
+		// æ ¼å¼åŒ–2012-03-04T23:42:00+08:00
 		SimpleDateFormat formatter = new SimpleDateFormat(
 				"yyyy-MM-dd'T'HH:mm:ssZ", Locale.CHINA);
 		try {
@@ -101,7 +101,7 @@ public class StringUtil {
 
 			return date;
 		} catch (ParseException e) {
-			// ¸ñÊ½»¯Sat, 17 Mar 2012 11:37:13 +0000
+			// æ ¼å¼åŒ–Sat, 17 Mar 2012 11:37:13 +0000
 			// Sat, 17 Mar 2012 22:13:41 +0800
 			try {
 				SimpleDateFormat formatter2 = new SimpleDateFormat(
@@ -144,15 +144,15 @@ public class StringUtil {
 		return "";
 	}
 
-	/* °´ÕÕÄê-ÔÂ-ÈÕ Ğ¡Ê±:·Ö£ºÃë¸ñÊ½»ñÈ¡µ±Ç°Ê±¼ä */
+	/* æŒ‰ç…§å¹´-æœˆ-æ—¥ å°æ—¶:åˆ†ï¼šç§’æ ¼å¼è·å–å½“å‰æ—¶é—´ */
 
 	public static String GetNowTime() {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		Date curDate = new Date(System.currentTimeMillis());// »ñÈ¡µ±Ç°Ê±¼ä
+		Date curDate = new Date(System.currentTimeMillis());// è·å–å½“å‰æ—¶é—´
 		return formatter.format(curDate);
 	}
 
-	/* °´ÕÕÄê-ÔÂ-ÈÕ¸ñÊ½»ñÈ¡µ±Ç°Ê±¼ä */
+	/* æŒ‰ç…§å¹´-æœˆ-æ—¥æ ¼å¼è·å–å½“å‰æ—¶é—´ */
 	public static String GetNowTime(boolean isNeed) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		String date = sdf.format(new Date());
@@ -160,7 +160,7 @@ public class StringUtil {
 		return date;
 	}
 
-	/* °´ÕÕÄêÔÂÈÕ¸ñÊ½»ñÈ¡µ±Ç°Ê±¼ä */
+	/* æŒ‰ç…§å¹´æœˆæ—¥æ ¼å¼è·å–å½“å‰æ—¶é—´ */
 	public static String GetYMD() {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
@@ -169,7 +169,7 @@ public class StringUtil {
 		return date;
 	}
 	
-	/* °´ÕÕÊ±·ÖÃë¸ñÊ½»ñÈ¡ÈÕÆÚ×Ö·û´® */
+	/* æŒ‰ç…§æ—¶åˆ†ç§’æ ¼å¼è·å–æ—¥æœŸå­—ç¬¦ä¸² */
 	public static String GetHMS(String strDate) {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("HHmmss");
@@ -179,7 +179,7 @@ public class StringUtil {
 		return date;
 	}
 	
-	/* °´ÕÕÄêÔÂÈÕ¸ñÊ½»ñÈ¡ÈÕÆÚ×Ö·û´® */
+	/* æŒ‰ç…§å¹´æœˆæ—¥æ ¼å¼è·å–æ—¥æœŸå­—ç¬¦ä¸² */
 	public static String GetYMD(String strDate) {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
@@ -188,7 +188,7 @@ public class StringUtil {
 
 		return date;
 	}
-	/* °´ÕÕÄêÔÂÈÕ¸ñÊ½»ñÈ¡ÈÕÆÚ×Ö·û´® */
+	/* æŒ‰ç…§å¹´æœˆæ—¥æ ¼å¼è·å–æ—¥æœŸå­—ç¬¦ä¸² */
 	public static String GetYMD2(String strDate) {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -198,14 +198,14 @@ public class StringUtil {
 		return date;
 	}
 
-	/* °´ÕÕÄê-ÔÂ-ÈÕ¸ñÊ½»ñÈ¡µ±Ç°Ê±·ÖÃë */
+	/* æŒ‰ç…§å¹´-æœˆ-æ—¥æ ¼å¼è·å–å½“å‰æ—¶åˆ†ç§’ */
 	public static String GetNowHMS() {
 		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 		String date = sdf.format(new Date());
 		return date;
 	}
 
-	/* ½«¶ÌÊ±¼ä¸ñÊ½×Ö·û´®×ª»»ÎªÊ±¼ä */
+	/* å°†çŸ­æ—¶é—´æ ¼å¼å­—ç¬¦ä¸²è½¬æ¢ä¸ºæ—¶é—´ */
 	public static Date strToDate(String strDate, boolean isYMD) {
 		if (isYMD == true) {
 			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
@@ -219,7 +219,7 @@ public class StringUtil {
 		}
 	}
 
-	/* »ñµÃ¶ÌÊ±¼ä¸ñÊ½ */
+	/* è·å¾—çŸ­æ—¶é—´æ ¼å¼ */
 	public static Date GetDate() {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		Date strtodate = formatter.parse(GetNowTime(), new ParsePosition(0));
@@ -227,7 +227,7 @@ public class StringUtil {
 
 	}
 
-	/* Ôö¼ÓÈÕÆÚÌìÊı/ÔÂÊı */
+	/* å¢åŠ æ—¥æœŸå¤©æ•°/æœˆæ•° */
 	public static String addDay(int n, boolean m) {
 		try {
 
@@ -235,9 +235,9 @@ public class StringUtil {
 			Calendar cd = Calendar.getInstance();
 			cd.setTime(sdf.parse(GetNowTime()));
 			if (m == false) {
-				cd.add(Calendar.DATE, n);// Ôö¼ÓÒ»Ìì
+				cd.add(Calendar.DATE, n);// å¢åŠ ä¸€å¤©
 			} else {
-				cd.add(Calendar.MONTH, n);// Ôö¼ÓÒ»¸öÔÂ
+				cd.add(Calendar.MONTH, n);// å¢åŠ ä¸€ä¸ªæœˆ
 			}
 			return sdf.format(cd.getTime());
 
@@ -247,7 +247,7 @@ public class StringUtil {
 
 	}
 
-	/* ËÄÉáÎåÈë,2Î»Ğ¡Êı */
+	/* å››èˆäº”å…¥,2ä½å°æ•° */
 	public static Double round(Double value) {
 		
 		BigDecimal bd = new BigDecimal(String.valueOf(value));
@@ -296,16 +296,16 @@ public class StringUtil {
 		return new String(hex);
 	}
 	
-	//ÊÇ·ñÎªÕûÊı
+	//æ˜¯å¦ä¸ºæ•´æ•°
 	public static Boolean Isint(String str)
 	{
 		try {
-			//°Ñ×Ö·û´®Ç¿ÖÆ×ª»»ÎªÊı×Ö 
+			//æŠŠå­—ç¬¦ä¸²å¼ºåˆ¶è½¬æ¢ä¸ºæ•°å­— 
 			int num=Integer.valueOf(str);
-			//Èç¹ûÊÇÊı×Ö£¬·µ»ØTrue 
+			//å¦‚æœæ˜¯æ•°å­—ï¼Œè¿”å›True 
 			return true;
 		} catch (Exception e) {
-			//Èç¹ûÅ×³öÒì³££¬·µ»ØFalse 
+			//å¦‚æœæŠ›å‡ºå¼‚å¸¸ï¼Œè¿”å›False 
 			return false;
 		}
 	}

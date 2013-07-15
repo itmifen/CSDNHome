@@ -19,35 +19,37 @@
 
 
     <style name="main_tab_bottom">
-        <item name="android:textSize">14dp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:ellipsize">marquee</item>
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
         <item name="android:background">#000000</item>
-        <item name="android:paddingTop">5dp</item>
+
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+
         <item name="android:button">@null</item>
         <item name="android:singleLine">true</item>
         <item name="android:drawablePadding">5dp</item>
         <item name="android:layout_weight">1.0</item>
-        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_height">48dp</item>
     </style>
 
     <style name="main_tab_bottom_sed">
-        <item name="android:textSize">14dp</item>
+        <item name="android:textSize">22dp</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:ellipsize">marquee</item>
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
         <item name="android:background">#3f3f44</item>
-        <item name="android:paddingTop">5dp</item>
+
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+
         <item name="android:button">@null</item>
         <item name="android:singleLine">true</item>
         <item name="android:drawablePadding">5dp</item>
         <item name="android:layout_weight">1.0</item>
-        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_height">48dp</item>
+
     </style>
+
 
 </resources>

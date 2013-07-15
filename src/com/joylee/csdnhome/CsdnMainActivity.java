@@ -48,15 +48,13 @@ public class CsdnMainActivity extends Activity {
         setContentView(R.layout.csdnmain);
 
 
-        NetHelper netHelper=new NetHelper();
+        NetHelper netHelper = new NetHelper();
         // Toast.makeText(MainActivity.this, String.valueOf(netHelper.isNetworkConnected(this)),200);
-        if(netHelper.isNetworkConnected(this))
-        {
+        if (netHelper.isNetworkConnected(this)) {
             myHandler = new MyHandler();
             MyThread m = new MyThread();
             new Thread(m).start();
-        }
-        else {
+        } else {
             Toast.makeText(getApplicationContext(), "网络故障，请检查您的网络环境", 1000).show();
 
         }
@@ -67,13 +65,12 @@ public class CsdnMainActivity extends Activity {
         List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 
 
-        List<newsentity> channlist=new ArrayList<newsentity>();
+        List<newsentity> channlist = new ArrayList<newsentity>();
         try {
 
-            NewsManager manager=new NewsManager(getApplicationContext());
-            channlist=manager.GetList();
-            if(channlist.size()<=0)
-            {
+            NewsManager manager = new NewsManager(getApplicationContext());
+            channlist = manager.GetList();
+            if (channlist.size() <= 0) {
                 URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
                 SAXParserFactory factory = SAXParserFactory.newInstance();
                 SAXParser parser = factory.newSAXParser();
@@ -81,7 +78,7 @@ public class CsdnMainActivity extends Activity {
                 rsshandler handler = new rsshandler(getApplicationContext());
                 reader.setContentHandler(handler);
                 reader.parse(new InputSource(myURL.openStream()));
-                channlist=manager.GetList();
+                channlist = manager.GetList();
             }
 
         } catch (ParserConfigurationException e) {
@@ -102,6 +99,7 @@ public class CsdnMainActivity extends Activity {
             //map.put("id", chann.getId());
             //map.put("url", chann.getUrl());
             map.put("title", newsinfo.getTitle());
+            map.put("anthor", newsinfo.getAnthor());
             map.put("newsdatetime", newsinfo.getNewsDatetime());
             map.put("url", newsinfo.getUrl());
             list.add(map);
@@ -109,9 +107,6 @@ public class CsdnMainActivity extends Activity {
 
         return list;
     }
-
-
-
 
 
     class MyHandler extends Handler {
@@ -132,17 +127,14 @@ public class CsdnMainActivity extends Activity {
             findViewById(R.id.main_progressBar1).setVisibility(View.INVISIBLE);
 
             newslist = (ListView) findViewById(R.id.listView1);
-            SimpleAdapter adapter=null;
-            if(getData().size()!=0)
-            {
+            SimpleAdapter adapter = null;
+            if (getData().size() != 0) {
                 adapter = new SimpleAdapter(getApplicationContext(), getData(),
-                        R.layout.newslistcontent, new String[]{"title", "newsdatetime", "url"}, new int[]{
-                        R.id.titletext, R.id.datetimetext});
+                        R.layout.newslistcontent, new String[]{"title","anthor", "newsdatetime", "url"}, new int[]{
+                        R.id.titletext, R.id.datetimetext,R.id.anthortext});
                 newslist.setAdapter(adapter);
-            }
-            else
-            {
-                Toast.makeText(getApplicationContext(),"鏆傛棤鏁版嵁",Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "暂无数据", Toast.LENGTH_LONG).show();
             }
 
             newslist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -172,7 +164,6 @@ public class CsdnMainActivity extends Activity {
          */
 
 
-
     }
 
     class MyThread implements Runnable {
@@ -191,9 +182,6 @@ public class CsdnMainActivity extends Activity {
 
         }
     }
-
-
-
 
 
 }

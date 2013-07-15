@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 /**
- * Èü¸ñÍ¨Êı¾İ²Ù×÷Í¨ÓÃÀà
+ * èµ›æ ¼é€šæ•°æ®æ“ä½œé€šç”¨ç±»
  * 
  */
 public class DbHelper extends SQLiteOpenHelper {
@@ -18,10 +18,10 @@ public class DbHelper extends SQLiteOpenHelper {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
-	// Êı¾İ¿â²»´æÔÚÊ±Ö´ĞĞ,µ÷ÓÃ getReadableDatabaseÊ±´¥·¢
+	// æ•°æ®åº“ä¸å­˜åœ¨æ—¶æ‰§è¡Œ,è°ƒç”¨ getReadableDatabaseæ—¶è§¦å‘
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// ĞÂÎÅ±í
+		// æ–°é—»è¡¨
 		db.execSQL("CREATE TABLE news (id INTEGER PRIMARY KEY,newstitle varchar(250) NOT NULL,createtime datetime  NULL,anthor varchar(50) null,newsdetails TEXT null,newsimage BLOB null,url varchar(1000)  null);");
 
 	}
@@ -32,7 +32,7 @@ public class DbHelper extends SQLiteOpenHelper {
 	}
 
 	/**
-	 * ²éÑ¯Êı¾İ
+	 * æŸ¥è¯¢æ•°æ®
 	 * 
 	 * @param sql
 	 */
@@ -41,7 +41,7 @@ public class DbHelper extends SQLiteOpenHelper {
 	}
 
 	/**
-	 * ²éÑ¯Êı¾İ
+	 * æŸ¥è¯¢æ•°æ®
 	 * 
 	 * @param sql
 	 * @param args
@@ -54,7 +54,7 @@ public class DbHelper extends SQLiteOpenHelper {
 	}
 
 	/**
-	 * Ö´ĞĞsql,ĞèÒ»ÌõÌõÖ´ĞĞ,·ñ¶¨Ö»»áÖ´ĞĞµÚÒ»Ìõ
+	 * æ‰§è¡Œsql,éœ€ä¸€æ¡æ¡æ‰§è¡Œ,å¦å®šåªä¼šæ‰§è¡Œç¬¬ä¸€æ¡
 	 * 
 	 * @param sql
 	 */
@@ -65,7 +65,7 @@ public class DbHelper extends SQLiteOpenHelper {
 	}
 
 	/**
-	 * Ö´ĞĞsql,ĞèÒ»ÌõÌõÖ´ĞĞ,·ñ¶¨Ö»»áÖ´ĞĞµÚÒ»Ìõ
+	 * æ‰§è¡Œsql,éœ€ä¸€æ¡æ¡æ‰§è¡Œ,å¦å®šåªä¼šæ‰§è¡Œç¬¬ä¸€æ¡
 	 * 
 	 * @param sql
 	 * @param args
