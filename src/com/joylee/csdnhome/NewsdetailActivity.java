@@ -46,6 +46,12 @@ public class NewsdetailActivity extends Activity {
         new Thread(m).start();
 
 
+
+
+
+
+
+
     }
 
 
