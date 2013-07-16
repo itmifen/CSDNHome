@@ -31,17 +31,17 @@ public class NewsManager {
     public void InsertNews(newsentity newsinfo) {
         DbHelper dbHelper = new DbHelper(applicationContext);
         dbHelper.execSQL(
-                "insert into news (newstitle,createtime,anthor,newsdetails,newsimage,url)"
-                        + " values(?,?,?,?,?,?)",
-                new Object[]{newsinfo.getTitle(), newsinfo.getNewsDatetime(), newsinfo.getAnthor(), newsinfo.getDetail(), newsinfo.getNewsimage(), newsinfo.getUrl()
+                "insert into news (newstitle,createtime,anthor,newsdetails,newsimage,url,newsid,source)"
+                        + " values(?,?,?,?,?,?,?,?)",
+                new Object[]{newsinfo.getTitle(), newsinfo.getNewsDatetime(), newsinfo.getAnthor(), newsinfo.getDetail(), newsinfo.getNewsimage(), newsinfo.getUrl(),newsinfo.getNewsid(),newsinfo.getSource()
                 });
     }
 
 
-    public newsentity GetInfoByTitle(String title) {
+    public newsentity GetInfoByID(String id,String source) {
         newsentity info = new newsentity();
-        String sql = "select * from news where newstitle=?";
-        Cursor result = dbHelper.query(sql, new String[]{title});
+        String sql = "select * from news where newsid=? and source=?";
+        Cursor result = dbHelper.query(sql, new String[]{id,source});
         if (result.getCount() > 0) {
             if (result.moveToFirst()) {
                 info.setNewsDatetime(result.getString(result
@@ -56,6 +56,10 @@ public class NewsManager {
                         .getColumnIndex("url")));
                 info.setNewsimage(result.getString(result
                         .getColumnIndex("newsimage")));
+                info.setNewsid(result.getString(result
+                        .getColumnIndex("newsid")));
+                info.setSource(result.getString(result
+                        .getColumnIndex("source")));
                 Close();
                 return info;
             }
@@ -65,11 +69,11 @@ public class NewsManager {
 
     }
 
-    public List<newsentity> GetList() {
+    public List<newsentity> GetList(String source) {
         List<newsentity> list = new ArrayList<newsentity>();
 
-        String sql = "select * from news order by id desc";
-        Cursor result = dbHelper.query(sql);
+        String sql = "select * from news where source=? order  by id desc";
+        Cursor result = dbHelper.query(sql,new String[]{source});
         if (result.getCount() > 0) {
             while (result.moveToNext()) {
                 newsentity info = new newsentity();
@@ -85,10 +89,14 @@ public class NewsManager {
                         .getColumnIndex("url")));
                 info.setNewsimage(result.getString(result
                         .getColumnIndex("newsimage")));
+                info.setNewsid(result.getString(result
+                        .getColumnIndex("newsid")));
+                info.setSource(result.getString(result
+                        .getColumnIndex("source")));
                 list.add(info);
             }
         }
-        return  list;
+        return list;
     }
 
 

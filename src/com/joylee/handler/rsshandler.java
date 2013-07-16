@@ -72,10 +72,8 @@ public class rsshandler extends DefaultHandler {
         // TODO Auto-generated method stub
         if(itemSTRING.equals(localName)&&newsinfo!=null)
         {
-          // newslist.add(newsinfo);
-
             NewsManager manager=new NewsManager(applicationContext);
-            if(manager.GetInfoByTitle(newsinfo.getTitle())==null)
+            if(manager.GetInfoByID(newsinfo.getNewsid(),String.valueOf(Emuns.newssource.csdn.value()))==null)
             {
                 manager.InsertNews(newsinfo);
             }
@@ -98,6 +96,17 @@ public class rsshandler extends DefaultHandler {
             if(tempString.equals(urlSTRING))
             {
                 newsinfo.setUrl(valuestring);
+                String[] str=valuestring.split("/");
+                String laststr=str[str.length-1];
+                String[] ids=laststr.split("-");
+                if(ids.length<=0)
+                {
+                    newsinfo.setNewsid(laststr);
+                }
+                else
+                {
+                    newsinfo.setNewsid(ids[0]);
+                }
             }
             if(tempString.equals(authorSTRING))
             {
@@ -108,7 +117,7 @@ public class rsshandler extends DefaultHandler {
                 valuestring=StringUtil.GetNowTime();
                 newsinfo.setNewsDatetime(valuestring);
             }
-
+            newsinfo.setSource(String.valueOf(Emuns.newssource.csdn.value()));
         }
 
 

@@ -10,6 +10,8 @@ public class newsentity {
     private String anthor;
     private String newsdatetime;
     private String newsimage;
+    private String newsid;
+    private String source;
 	
 	public String getId() {
 		return id;
@@ -66,6 +68,27 @@ public class newsentity {
     public  void setNewsimage(String newsimage)
     {
         this.newsimage=newsimage;
+    }
+
+
+    public String getNewsid()
+    {
+        return newsid;
+    }
+
+    public  void setNewsid(String newsid)
+    {
+        this.newsid=newsid;
+    }
+
+    public String getSource()
+    {
+        return source;
+    }
+
+    public  void setSource(String source)
+    {
+        this.source=source;
     }
 
 }

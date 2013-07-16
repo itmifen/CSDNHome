@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.joylee.business.NewsManager;
 import com.joylee.common.NetHelper;
+import com.joylee.entity.Emuns;
 import com.joylee.entity.newsentity;
 import com.joylee.handler.rsshandler;
 
@@ -38,14 +39,28 @@ import javax.xml.parsers.SAXParserFactory;
  */
 public class CsdnMainActivity extends Activity {
 
-    private ListView newslist;
+    private JoyListView newslist;
     private MyHandler myHandler;
+    private  List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+    private List<newsentity> channlist = new ArrayList<newsentity>();
+    private boolean isupdate;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.csdnmain);
+
+        newslist = (JoyListView) findViewById(R.id.listView1);
+
+        newslist.setonRefreshListener(new JoyListView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                myHandler = new MyHandler(true);
+                MyThread m = new MyThread();
+                new Thread(m).start();
+            }
+        });
 
 
         NetHelper netHelper = new NetHelper();
@@ -62,26 +77,50 @@ public class CsdnMainActivity extends Activity {
 
 
     private List<Map<String, String>> getData() {
-        List<Map<String, String>> list = new ArrayList<Map<String, String>>();
-
-
-        List<newsentity> channlist = new ArrayList<newsentity>();
-        try {
-
+        list = new ArrayList<Map<String, String>>();
+        channlist = new ArrayList<newsentity>();
             NewsManager manager = new NewsManager(getApplicationContext());
-            channlist = manager.GetList();
+            channlist = manager.GetList(String.valueOf(Emuns.newssource.csdn.value()));
             if (channlist.size() <= 0) {
-                URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
-                SAXParserFactory factory = SAXParserFactory.newInstance();
-                SAXParser parser = factory.newSAXParser();
-                XMLReader reader = parser.getXMLReader();
-                rsshandler handler = new rsshandler(getApplicationContext());
-                reader.setContentHandler(handler);
-                reader.parse(new InputSource(myURL.openStream()));
-                channlist = manager.GetList();
+                insertdata();
+            }
+        else {
+                //是否往数据库插数据，下拉更新的时候有用
+                if(isupdate==true)
+                {
+                    insertdata();
+                    isupdate=false;
+                }
             }
 
-        } catch (ParserConfigurationException e) {
+
+        for (int i = 0; i < channlist.size(); i++) {
+            Map<String, String> map = new HashMap<String, String>();
+            newsentity newsinfo = (newsentity) channlist.get(i);
+            map.put("title", newsinfo.getTitle());
+            map.put("anthor", newsinfo.getAnthor());
+            map.put("newsdatetime", newsinfo.getNewsDatetime());
+            map.put("url", newsinfo.getUrl());
+            list.add(map);
+        }
+        return list;
+    }
+
+
+    private  void insertdata()
+    {
+        NewsManager manager = new NewsManager(getApplicationContext());
+        try {
+        URL myURL = new URL("http://www.csdn.net/article/rss_lastnews");
+        SAXParserFactory factory = SAXParserFactory.newInstance();
+        SAXParser parser = factory.newSAXParser();
+        XMLReader reader = parser.getXMLReader();
+        rsshandler handler = new rsshandler(getApplicationContext());
+        reader.setContentHandler(handler);
+        reader.parse(new InputSource(myURL.openStream()));
+        channlist = manager.GetList(String.valueOf(Emuns.newssource.csdn.value()));
+        }
+        catch (ParserConfigurationException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (SAXException e) {
@@ -92,20 +131,6 @@ public class CsdnMainActivity extends Activity {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
-        for (int i = 0; i < channlist.size(); i++) {
-            Map<String, String> map = new HashMap<String, String>();
-            newsentity newsinfo = (newsentity) channlist.get(i);
-            //map.put("id", chann.getId());
-            //map.put("url", chann.getUrl());
-            map.put("title", newsinfo.getTitle());
-            map.put("anthor", newsinfo.getAnthor());
-            map.put("newsdatetime", newsinfo.getNewsDatetime());
-            map.put("url", newsinfo.getUrl());
-            list.add(map);
-        }
-
-        return list;
     }
 
 
@@ -113,10 +138,19 @@ public class CsdnMainActivity extends Activity {
         public MyHandler() {
         }
 
+        public MyHandler(boolean update) {
+            if(update==true)
+            {
+                isupdate=true;
+            }
+            else {
+                isupdate=false;
+            }
+        }
+
         public MyHandler(Looper L) {
             super(L);
         }
-
 
         @Override
         public void handleMessage(Message msg) {
@@ -125,8 +159,6 @@ public class CsdnMainActivity extends Activity {
             super.handleMessage(msg);
 
             findViewById(R.id.main_progressBar1).setVisibility(View.INVISIBLE);
-
-            newslist = (ListView) findViewById(R.id.listView1);
             SimpleAdapter adapter = null;
             if (getData().size() != 0) {
                 adapter = new SimpleAdapter(getApplicationContext(), getData(),
@@ -143,8 +175,6 @@ public class CsdnMainActivity extends Activity {
                                         long arg3) {
                     String url = getData().get(arg2).get("url").toString();
                     String title = getData().get(arg2).get("title").toString();
-
-
                     Bundle bundle = new Bundle();
                     bundle.putString("url", url);
                     bundle.putString("title", title);
@@ -155,22 +185,16 @@ public class CsdnMainActivity extends Activity {
 
                 }
             });
-
-
+            newslist.onRefreshComplete();
         }
-
-        /**
-         * 初始化Tab
-         */
 
 
     }
 
     class MyThread implements Runnable {
         public void run() {
-
             try {
-                Thread.sleep(100);
+                Thread.sleep(300);
             } catch (InterruptedException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();

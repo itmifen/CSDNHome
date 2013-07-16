@@ -11,7 +11,7 @@ import android.util.Log;
  * 
  */
 public class DbHelper extends SQLiteOpenHelper {
-	private final static int DATABASE_VERSION = 1;
+	private final static int DATABASE_VERSION = 2;
 	private final static String DATABASE_NAME = "joynews.db";
 
 	public DbHelper(Context context) {
@@ -22,7 +22,7 @@ public class DbHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		// 新闻表
-		db.execSQL("CREATE TABLE news (id INTEGER PRIMARY KEY,newstitle varchar(250) NOT NULL,createtime datetime  NULL,anthor varchar(50) null,newsdetails TEXT null,newsimage BLOB null,url varchar(1000)  null);");
+		db.execSQL("CREATE TABLE news (id INTEGER PRIMARY KEY,newstitle varchar(250) NOT NULL,createtime datetime  NULL,anthor varchar(50) null,newsdetails TEXT null,newsimage BLOB null,url varchar(1000)  null,newsid INTEGER null,source INTEGER not null);");
 
 	}
 
