@@ -2,6 +2,8 @@ package com.joylee.csdnhome;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -42,6 +44,15 @@ public class KrMainActivity extends Activity {
 
         newslist = (JoyListView) findViewById(R.id.krlist);
         newsManager=new NewsManager(getApplicationContext());
+
+        newslist.setonRefreshListener(new JoyListView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                myHandler = new MyHandler(true);
+                MyThread m = new MyThread();
+                new Thread(m).start();
+            }
+        });
 
         NetHelper netHelper = new NetHelper();
         // Toast.makeText(MainActivity.this, String.valueOf(netHelper.isNetworkConnected(this)),200);
@@ -116,7 +127,7 @@ public class KrMainActivity extends Activity {
                 Map<String, String> map = new HashMap<String, String>();
                 newsentity newsinfo = (newsentity) channlist.get(i);
                 map.put("title", newsinfo.getTitle());
-                map.put("anthor", newsinfo.getAnthor());
+                //map.put("anthor", newsinfo.getAnthor());
                 map.put("newsdatetime", newsinfo.getNewsDatetime());
                 map.put("url", newsinfo.getUrl());
                 list.add(map);
@@ -172,8 +183,6 @@ public class KrMainActivity extends Activity {
 
         }
     }
-
-
 
 
 }

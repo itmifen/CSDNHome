@@ -68,9 +68,9 @@ public class krhandler {
                     break;
                 case XmlPullParser.END_TAG:
                     if (tag.equalsIgnoreCase("item")) {
-                        String valuestring = entity.getUrl();
+                        String valuestring = entity.getUrl().replace('.','/');
                         String[] str = valuestring.split("/");
-                        String laststr = str[str.length - 1];
+                        String laststr = str[str.length - 2];
                         String[] ids = laststr.split(".");
                         if (ids.length <= 0) {
                             entity.setNewsid(laststr);

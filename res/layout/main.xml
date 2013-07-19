@@ -1,64 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
         >
 
-    <!--<include android:id="@+id/IncludeHeader"  layout="@layout/head" />-->
-    <LinearLayout
-            android:orientation="vertical"
+
+    <com.joylee.csdnhome.SlidingMenuView
+            android:id="@+id/sliding_menu_view"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center_vertical">
-        <RadioGroup
-                android:id="@+id/main_tab"
+            android:layout_height="fill_parent">
+        <!--左侧菜单内容-->
+        <LinearLayout
+                android:id="@+id/sliding_tab"
                 android:background="#000000"
-                android:orientation="horizontal"
+                android:orientation="vertical"
+                android:layout_width="197dp"
+                android:padding="5dip"
+                android:layout_height="fill_parent" >
+
+            <TextView android:layout_width="180dp" android:layout_height="50dp" android:paddingLeft="10dp"
+                      android:textSize="26sp" android:textColor="#ffffff" android:text="设置" android:gravity="center_vertical" ></TextView>
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#ffffff"
+                    />
+            <TextView android:layout_width="fill_parent" android:layout_height="40dp" android:paddingLeft="10dp"
+                      android:textSize="18sp" android:textColor="#cccccc" android:text="离线下载"  android:gravity="center_vertical" ></TextView>
+            <TextView android:layout_width="fill_parent" android:layout_height="40dp" android:paddingLeft="10dp"
+                      android:textSize="18sp" android:textColor="#cccccc" android:text="关于"  android:gravity="center_vertical" ></TextView>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+                android:id="@+id/sliding_body"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_gravity="bottom"
-                >
+                android:layout_height="fill_parent">
 
-            <RadioButton
-                    android:layout_marginTop="2.0dip"
-                    android:text="csdn"
-                    android:id="@+id/TabBlog"
-                    style="@style/main_tab_bottom_sed"/>
-
-            <RadioButton
-                    android:layout_marginTop="2.0dip"
-                    android:text="36kr"
-                    android:id="@+id/TabNews"
-                    style="@style/main_tab_bottom"/>
-        </RadioGroup>
-
-        <TabHost
-                android:id="@android:id/tabhost"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                >
-
-            <FrameLayout
-                    android:id="@android:id/tabcontent"
+            <!--主界面内容-->
+            <!--<include android:id="@+id/IncludeHeader"  layout="@layout/head" />-->
+            <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:layout_weight="1.0"/>
+                    android:gravity="center_vertical">
+                <RadioGroup
+                        android:id="@+id/main_tab"
+                        android:background="#000000"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="bottom"
+                        >
 
-            <TabWidget
-                    android:id="@android:id/tabs"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.0"
-                    android:visibility="gone"/>
-        </TabHost>
+                    <RadioButton
+                            android:layout_marginTop="2.0dip"
+                            android:text="csdn"
+                            android:id="@+id/TabBlog"
+                            style="@style/main_tab_bottom_sed"/>
+
+                    <RadioButton
+                            android:layout_marginTop="2.0dip"
+                            android:text="36kr"
+                            android:id="@+id/TabNews"
+                            style="@style/main_tab_bottom"/>
+                </RadioGroup>
+
+                <TabHost
+                        android:id="@android:id/tabhost"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        >
+
+                    <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"/>
+
+                    <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0"
+                            android:visibility="gone"/>
+                </TabHost>
 
 
+            </LinearLayout>
+
+        </FrameLayout>
 
 
-    </LinearLayout>
+    </com.joylee.csdnhome.SlidingMenuView>
 
 
 </LinearLayout>

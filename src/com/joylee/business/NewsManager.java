@@ -30,18 +30,22 @@ public class NewsManager {
 
     public void InsertNews(newsentity newsinfo) {
         DbHelper dbHelper = new DbHelper(applicationContext);
-        dbHelper.execSQL(
-                "insert into news (newstitle,createtime,anthor,newsdetails,newsimage,url,newsid,source)"
-                        + " values(?,?,?,?,?,?,?,?)",
-                new Object[]{newsinfo.getTitle(), newsinfo.getNewsDatetime(), newsinfo.getAnthor(), newsinfo.getDetail(), newsinfo.getNewsimage(), newsinfo.getUrl(),newsinfo.getNewsid(),newsinfo.getSource()
-                });
+        newsentity info = GetInfoByID(newsinfo.getNewsid(), newsinfo.getSource());
+
+        if (info == null) {
+            dbHelper.execSQL(
+                    "insert into news (newstitle,createtime,anthor,newsdetails,newsimage,url,newsid,source)"
+                            + " values(?,?,?,?,?,?,?,?)",
+                    new Object[]{newsinfo.getTitle(), newsinfo.getNewsDatetime(), newsinfo.getAnthor(), newsinfo.getDetail(), newsinfo.getNewsimage(), newsinfo.getUrl(), newsinfo.getNewsid(), newsinfo.getSource()
+                    });
+        }
     }
 
 
-    public newsentity GetInfoByID(String id,String source) {
+    public newsentity GetInfoByID(String id, String source) {
         newsentity info = new newsentity();
         String sql = "select * from news where newsid=? and source=?";
-        Cursor result = dbHelper.query(sql, new String[]{id,source});
+        Cursor result = dbHelper.query(sql, new String[]{id, source});
         if (result.getCount() > 0) {
             if (result.moveToFirst()) {
                 info.setNewsDatetime(result.getString(result
@@ -72,8 +76,8 @@ public class NewsManager {
     public List<newsentity> GetList(String source) {
         List<newsentity> list = new ArrayList<newsentity>();
 
-        String sql = "select * from news where source=? order  by id desc";
-        Cursor result = dbHelper.query(sql,new String[]{source});
+        String sql = "select * from news where source=? order  by newsid desc";
+        Cursor result = dbHelper.query(sql, new String[]{source});
         if (result.getCount() > 0) {
             while (result.moveToNext()) {
                 newsentity info = new newsentity();
@@ -97,6 +101,20 @@ public class NewsManager {
             }
         }
         return list;
+    }
+
+
+    //    获取最近更新的时间
+    public String GetLastdate(String source) {
+        String str = "";
+        String sql = "select * from news where source=? order by newsid desc limit 1";
+        Cursor result = dbHelper.query(sql, new String[]{source});
+        if (result.getCount() > 0) {
+            if (result.moveToFirst()) {
+                str = result.getString(result.getColumnIndex("createtime"));
+            }
+        }
+        return str;
     }
 
 

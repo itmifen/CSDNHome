@@ -16,21 +16,28 @@
             android:label="@string/app_name"
             android:theme="@style/AppBaseTheme"
             >
-        <activity android:name="com.joylee.csdnhome.MainActivity" > <!-- 设定第一个activity -->
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN"/>
-            <category android:name="android.intent.category.LAUNCHER"/>
-        </intent-filter>
-    </activity>
-    <activity
-            android:name="com.joylee.csdnhome.NewsdetailActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <service android:name=".KrService">
+            <intent-filter>
+                <action android:name="com.joylee.csdnhome.KrService"></action>
+            </intent-filter>
+        </service>
+
+
+        <activity android:name="com.joylee.csdnhome.MainActivity"> <!-- 设定第一个activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.joylee.csdnhome.NewsdetailActivity"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
         <activity
                 android:name="com.joylee.csdnhome.CsdnMainActivity"
                 android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
         <activity
                 android:name="com.joylee.csdnhome.KrMainActivity"
                 android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
-</application>
+    </application>
 
-        </manifest>
+</manifest>
