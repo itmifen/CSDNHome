@@ -16,17 +16,18 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba4264ed-b346-4b30-8b13-636c123ca8cd" name="Default" comment="tab未完待续">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/joylee/entity/Config.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/KrService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/SlidingMenuView.java" />
+    <list default="true" id="ba4264ed-b346-4b30-8b13-636c123ca8cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/actionbarsherlock.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/slidemenu.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/actionbarsherlock.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/myslide.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/shadow.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/slidemenu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/KrMainActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/KrMainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSDNHome.iml" afterPath="$PROJECT_DIR$/CSDNHome.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" afterPath="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/handler/krhandler.java" afterPath="$PROJECT_DIR$/src/com/joylee/handler/krhandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/newslistcontent.xml" afterPath="$PROJECT_DIR$/res/layout/newslistcontent.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CSDNHome.iws" />
@@ -34,13 +35,13 @@
     <file path="/newslistcontent.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374026915258" ignored="false" />
     <file path="/fragment.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374027545807" ignored="false" />
     <file path="/main.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374034773273" ignored="false" />
-    <file path="/MainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374222786029" ignored="false" />
-    <file path="/Dummy.txt" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374196161543" ignored="false" />
+    <file path="/MainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374819777734" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1376910862119" ignored="false" />
     <file path="/NewsdetailActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371309610769" ignored="false" />
     <file path="/DomParserHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371743233515" ignored="false" />
     <file path="/newsentity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372997767769" ignored="false" />
     <file path="/newsdetail.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371310305126" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374134195273" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1376910419055" ignored="false" />
     <file path="/head.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371288421902" ignored="false" />
     <file path="/strings.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371289188760" ignored="false" />
     <file path="/HtmlHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371308799998" ignored="false" />
@@ -67,6 +68,7 @@
     <file path="$USER_HOME$/Desktop/SlidingMenu-master/SlidingMenu-master/example/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374033793126" ignored="false" />
     <file path="/KrService.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374224213225" ignored="false" />
     <file path="/KrReceiver.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374203594270" ignored="false" />
+    <file path="/myslideActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1376910334886" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,38 +138,91 @@
       <file leaf-file-name="KrService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/KrService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1077#3547#0" expanded="true" />
-                <element signature="e#3536#3537#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KrMainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/KrMainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="13" selection-start="3057" selection-end="3057" vertical-scroll-proportion="0.0">
+            <state line="49" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joylee/common/HtmlHelper.java">
+      <file leaf-file-name="CsdnMainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="9" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+            <state line="154" column="17" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsManager.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
+      <file leaf-file-name="myslide.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/myslide.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="837" selection-end="837" vertical-scroll-proportion="0.36842105">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myslideActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="40" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingMenu.class" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/libs/slidemenu.jar!/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="22" selection-start="7072" selection-end="7072" vertical-scroll-proportion="0.1609375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shadow.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/shadow.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="28" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="0" selection-start="2663" selection-end="2663" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingMenuView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/SlidingMenuView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="248" column="31" selection-start="7213" selection-end="7213" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,8 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMain.java" />
-        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/csdnmain.xml" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/pullhead.xml" />
@@ -202,12 +255,14 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/joylee/entity/Config.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/KrMainActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/KrReceiver.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/handler/krhandler.java" />
-        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/KrService.java" />
         <option value="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
+        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -251,15 +306,9 @@
               <option name="myItemId" value="CSDNHome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -269,18 +318,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="joylee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -299,10 +336,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="joylee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,37 +371,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="joylee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSDNHome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="joylee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,8 +395,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -412,17 +419,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\document\赛格电子商务2012\项目\Demo\CSDNHome\res\drawable-hdpi" />
+      <recent name="E:\document\赛格电子商务2012\项目\Demo\CSDNHome\src\com\joylee\csdnhome" />
+      <recent name="E:\document\赛格电子商务2012\项目\Demo\CSDNHome\res\layout" />
+      <recent name="E:\document\赛格电子商务2012\项目\Demo\CSDNHome\libs" />
       <recent name="E:\document\赛格电子商务2012\项目\Demo\CSDNHome\src\com\joylee\common" />
-      <recent name="E:\document\赛格电子商务2012\项目\Demo\CSDNHome" />
-      <recent name="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\res\drawable-xxhdpi" />
-      <recent name="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\res\drawable-xhdpi" />
-      <recent name="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\res\drawable-mdpi" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.joylee" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\赛购文件\赛格网2012\项目\Demo\CSDNHome\src" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.CSDNHome">
@@ -604,7 +611,17 @@
       <workItem from="1373982406785" duration="4698000" />
       <workItem from="1374021122500" duration="14053000" />
       <workItem from="1374113854643" duration="16040000" />
-      <workItem from="1374196150433" duration="21171000" />
+      <workItem from="1374196150433" duration="21863000" />
+      <workItem from="1374734671819" duration="3054000" />
+      <workItem from="1374805854498" duration="3144000" />
+      <workItem from="1375152717952" duration="2348000" />
+      <workItem from="1375251766504" duration="4217000" />
+      <workItem from="1375321156719" duration="1569000" />
+      <workItem from="1375773547865" duration="2018000" />
+      <workItem from="1375839023613" duration="658000" />
+      <workItem from="1376876273827" duration="29000" />
+      <workItem from="1376909668569" duration="1006000" />
+      <workItem from="1376910855634" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="修改为从数据库查询">
       <created>1373039719879</created>
@@ -614,11 +631,15 @@
       <created>1373383055564</created>
       <updated>1373383055564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加服务、添加广播监听。">
+      <created>1374224815439</created>
+      <updated>1374224815439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132047000" />
+    <option name="totallyTimeSpent" value="151392000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -642,23 +663,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="860" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3744681" sideWeight="0.5043541" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3744681" sideWeight="0.4724238" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28734" sideWeight="0.6415094" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31270358" sideWeight="0.50162864" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29787233" sideWeight="0.56313497" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3485064" sideWeight="0.5660377" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5900709" sideWeight="0.5660377" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257468" sideWeight="0.35994196" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928162" sideWeight="0.68428373" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.7617504" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39985487" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2619739" sideWeight="0.7035461" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2964539" sideWeight="0.43686503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2619739" sideWeight="0.40992907" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29503545" sideWeight="0.43686503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29970974" sideWeight="0.6955903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30551523" sideWeight="0.6955903" order="3" side_tool="false" content_ui="tabs" />
@@ -666,6 +686,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29503545" sideWeight="0.56313497" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -738,7 +759,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tab未完待续" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加服务、添加广播监听。" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -754,6 +775,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="修改为从数据库查询" />
     <MESSAGE value="tab未完待续" />
+    <MESSAGE value="添加服务、添加广播监听。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -763,69 +785,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/entity/Emuns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/sqlite/SQLiteCursor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="15" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/database/AbstractWindowedCursor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="67" selection-start="800" selection-end="829" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/ContextWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="16" selection-start="4788" selection-end="4788" vertical-scroll-proportion="5.3103447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/Intent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="29" selection-start="26699" selection-end="26699" vertical-scroll-proportion="0.32439023">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/entity/newsentity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="27" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/app/Instrumentation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="19" selection-start="573" selection-end="573" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="0" selection-start="8277" selection-end="8277" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3758#4433#0" expanded="true" />
-            <element signature="e#4426#4427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/JoyListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="44" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.0">
@@ -835,9 +794,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/handler/krhandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="61" selection-start="2524" selection-end="2524" vertical-scroll-proportion="1.4572649">
-          <folding />
-        </state>
+        <state line="72" column="61" selection-start="2524" selection-end="2524" vertical-scroll-proportion="1.4572649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/NewsdetailActivity.java">
@@ -847,34 +804,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="362" selection-end="362" vertical-scroll-proportion="-0.32917705" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/common/HtmlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+        <state line="22" column="9" selection-start="481" selection-end="481" vertical-scroll-proportion="0.053140096" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/SlidingMenuView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="31" selection-start="7213" selection-end="7213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="0" selection-start="2663" selection-end="2663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/KrMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="73" selection-start="5123" selection-end="5123" vertical-scroll-proportion="4.0235987">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/KrService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1077#3547#0" expanded="true" />
-            <element signature="e#3536#3537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/KrMainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="13" selection-start="3057" selection-end="3057" vertical-scroll-proportion="0.0">
+        <state line="49" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="837" selection-end="837" vertical-scroll-proportion="0.36842105">
+        <state line="154" column="17" selection-start="4751" selection-end="4751" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/myslide.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/shadow.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="28" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/slidemenu.jar!/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="22" selection-start="7072" selection-end="7072" vertical-scroll-proportion="0.1609375">
           <folding />
         </state>
       </provider>

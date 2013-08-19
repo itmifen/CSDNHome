@@ -23,7 +23,7 @@
         </service>
 
 
-        <activity android:name="com.joylee.csdnhome.MainActivity"> <!-- 设定第一个activity -->
+        <activity android:name="com.joylee.csdnhome.myslideActivity"> <!-- 设定第一个activity -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
