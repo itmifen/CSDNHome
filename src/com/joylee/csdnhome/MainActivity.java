@@ -13,6 +13,7 @@ import android.util.Xml;
 import android.view.*;
 import android.view.animation.AnimationUtils;
 import android.widget.*;
+import com.agimind.widget.SlideHolder;
 import com.joylee.business.NewsManager;
 import com.joylee.common.NetHelper;
 import com.joylee.entity.Config;
@@ -60,6 +61,8 @@ public class MainActivity extends TabActivity {
     private String lastdate = "";
     private ActivityReceiver activityReceiver;
 
+    private SlideHolder slideHolder;
+
     private static final String action = "com.joylee.csdnhome.KrService";
 
     @Override
@@ -77,6 +80,9 @@ public class MainActivity extends TabActivity {
 
         radioGroup = (RadioGroup) findViewById(R.id.main_tab);
         radioGroup.setOnCheckedChangeListener(checkedChangeListener);
+
+        slideHolder=(SlideHolder)findViewById(R.id.slideHolder);
+        slideHolder.setDirection(SlideHolder.DIRECTION_RIGHT);
 
         InitialTab();
 
