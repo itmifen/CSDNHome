@@ -38,6 +38,9 @@
         <activity
                 android:name="com.joylee.csdnhome.KrMainActivity"
                 android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
+                android:name="com.joylee.csdnhome.myslideActivity"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
     </application>
 
 </manifest>

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <com.agimind.widget.SlideHolder xmlns:android="http://schemas.android.com/apk/res/android"
                                 xmlns:tools="http://schemas.android.com/tools"
                                 android:id="@+id/slideHolder"
@@ -60,7 +58,7 @@
                 <FrameLayout
                         android:id="@android:id/tabcontent"
                         android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
+                        android:layout_height="fill_parent" android:layout_marginBottom="48dp"
                         android:layout_weight="1.0"/>
 
                 <TabWidget
@@ -91,8 +89,13 @@
 
                 <RadioButton
                         android:layout_marginTop="2.0dip"
-                        android:text="36kr"
+                        android:text="36氪"
                         android:id="@+id/TabNews"
+                        style="@style/main_tab_bottom"/>
+                <RadioButton
+                        android:layout_marginTop="2.0dip"
+                        android:text="图片"
+                        android:id="@+id/TabPic"
                         style="@style/main_tab_bottom"/>
             </RadioGroup>
             </TabHost>

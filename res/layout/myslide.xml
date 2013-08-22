@@ -1,47 +1,18 @@
-<com.agimind.widget.SlideHolder xmlns:android="http://schemas.android.com/apk/res/android"
-                                xmlns:tools="http://schemas.android.com/tools"
-                                android:id="@+id/slideHolder"
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                tools:context=".MainActivity" >
+<?xml version="1.0" encoding="utf-8"?>
 
-    <ScrollView
-            android:layout_width="200dp"
-            android:layout_height="fill_parent"
-            android:background="@android:color/black" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:staggered="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ffffff"
+              android:id="@+id/headlayout"  android:gravity="center_vertical" >
 
-        <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
-            <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="按钮1" />
-
-            <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="按钮2" />
-
-
-        </LinearLayout>
-    </ScrollView>
-
-    <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
-
-        <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:text="swipe"
-                android:textSize="25sp" />
-
-    </RelativeLayout>
-
-</com.agimind.widget.SlideHolder>
+    <com.origamilabs.library.views.StaggeredGridView
+            android:id="@+id/staggeredGridView1"
+            staggered:numColumns="2"
+            staggered:drawSelectorOnTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="8dp"  android:layout_marginBottom="8dp"/>
+</LinearLayout>

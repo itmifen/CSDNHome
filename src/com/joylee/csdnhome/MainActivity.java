@@ -44,10 +44,12 @@ public class MainActivity extends TabActivity {
 
     private Intent intentcsdn;
     private Intent intentkr;
+    private  Intent intentpic;
 
     public String whichTab;
     public RadioButton rb1;
     public RadioButton rb2;
+    public RadioButton rb3;
     public int currentTab = 0;
     private RadioGroup radioGroup;
 
@@ -72,10 +74,12 @@ public class MainActivity extends TabActivity {
 
         rb1 = (RadioButton) findViewById(R.id.TabBlog);
         rb2 = (RadioButton) findViewById(R.id.TabNews);
+        rb3=(RadioButton)findViewById(R.id.TabPic);
 
 
         intentcsdn = new Intent(this, CsdnMainActivity.class);
         intentkr = new Intent(this, KrMainActivity.class);
+        intentpic = new Intent(this, myslideActivity.class);
 
 
         radioGroup = (RadioGroup) findViewById(R.id.main_tab);
@@ -116,6 +120,7 @@ public class MainActivity extends TabActivity {
         tabHost = getTabHost();
         tabHost.addTab(buildTabSpec("csdn", R.drawable.ic_launcher, R.drawable.ic_launcher, intentcsdn));
         tabHost.addTab(buildTabSpec("36kr", R.drawable.ic_launcher, R.drawable.ic_launcher, intentkr));
+        tabHost.addTab(buildTabSpec("pic", R.drawable.ic_launcher, R.drawable.ic_launcher, intentpic));
     }
 
 
@@ -123,10 +128,17 @@ public class MainActivity extends TabActivity {
         if (currentTab == 0) {
             rb1.setChecked(true);
             rb2.setChecked(false);
+            rb3.setChecked(false);
         }
         if (currentTab == 1) {
             rb1.setChecked(false);
             rb2.setChecked(true);
+            rb3.setChecked(false);
+        }
+        if (currentTab ==2) {
+            rb1.setChecked(false);
+            rb2.setChecked(false);
+            rb3.setChecked(true);
         }
     }
 
@@ -142,6 +154,10 @@ public class MainActivity extends TabActivity {
                 case R.id.TabNews:
                     setCurrentTabWithAnim(currentTab, 0, "36kr");
                     currentTab = 1;
+                    break;
+                case R.id.TabPic:
+                    setCurrentTabWithAnim(currentTab, 0, "pic");
+                    currentTab = 2;
                     break;
                 default:
                     break;
@@ -238,57 +254,6 @@ public class MainActivity extends TabActivity {
         }
     }
 
-//
-//    // 左右滑动刚好页面也有滑动效果
-//    class MyGestureDetector extends GestureDetector.SimpleOnGestureListener {
-//        @Override
-//        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
-//                               float velocityY) {
-//            TabHost tabHost = getTabHost();
-//            try {
-//                if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH)
-//                    return false;
-//                // right to left swipe
-//                if (e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE
-//                        && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
-//                    Log.i("test", "right");
-//                    if (currentView == maxTabIndex) {
-//                        currentView = 0;
-//                    } else {
-//                        currentView++;
-//                    }
-//                    setCurrentTabWithAnim(currentTab, currentView, "csdn");
-//                    currentTab = currentView;
-//                } else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE
-//                        && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
-//                    Log.i("test", "left");
-//                    if (currentView == 0) {
-//                        currentView = maxTabIndex;
-//                    } else {
-//                        currentView--;
-//                    }
-//                    setCurrentTabWithAnim(currentTab, currentView, "36kr");
-//                    currentTab = currentView;
-//                }
-//            } catch (Exception e) {
-//            }
-//            return false;
-//        }
-//    }
-//
-//    @Override
-//    public boolean dispatchTouchEvent(MotionEvent event) {
-//        if (gestureDetector.onTouchEvent(event)) {
-//            event.setAction(MotionEvent.ACTION_CANCEL);
-//        }
-//        return super.dispatchTouchEvent(event);
-//    }
-//
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        //  getMenuInflater().inflate(R.menu.activity_main, menu);
-//        return true;
-//    }
 
 
     class ActivityReceiver extends BroadcastReceiver {
