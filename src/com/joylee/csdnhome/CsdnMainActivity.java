@@ -44,6 +44,7 @@ public class CsdnMainActivity extends Activity {
     private  List<Map<String, String>> list = new ArrayList<Map<String, String>>();
     private List<newsentity> channlist = new ArrayList<newsentity>();
     private boolean isupdate;
+    private int pageindex=0;
 
 
     @Override
@@ -80,7 +81,7 @@ public class CsdnMainActivity extends Activity {
         list = new ArrayList<Map<String, String>>();
         channlist = new ArrayList<newsentity>();
             NewsManager manager = new NewsManager(getApplicationContext());
-            channlist = manager.GetList(String.valueOf(Emuns.newssource.csdn.value()));
+            channlist = manager.GetList(String.valueOf(Emuns.newssource.csdn.value()),0,20);
             if (channlist.size() <= 0) {
                 insertdata();
             }

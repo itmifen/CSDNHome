@@ -27,17 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba4264ed-b346-4b30-8b13-636c123ca8cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/joylee/common/AsyncImageLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/origamilabs/library/views/ScrollerCompat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/origamilabs/library/views/ScrollerCompatIcs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/origamilabs/library/views/StaggeredGridView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/row_staggered_demo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/myslide.xml" afterPath="$PROJECT_DIR$/res/layout/myslide.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java" afterPath="$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" afterPath="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/csdnmain.xml" afterPath="$PROJECT_DIR$/res/layout/csdnmain.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CSDNHome.iws" />
@@ -46,7 +38,7 @@
     <file path="/fragment.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374027545807" ignored="false" />
     <file path="/main.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377156412136" ignored="false" />
     <file path="/MainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377155634319" ignored="false" />
-    <file path="/Dummy.txt" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377144004083" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377670784153" ignored="false" />
     <file path="/NewsdetailActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371309610769" ignored="false" />
     <file path="/DomParserHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1371743233515" ignored="false" />
     <file path="/newsentity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372997767769" ignored="false" />
@@ -64,7 +56,7 @@
     <file path="/numberkeyboard.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372836163041" ignored="false" />
     <file path="/numbertest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372834447080" ignored="false" />
     <file path="/DbHelper.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1372996731494" ignored="false" />
-    <file path="/NewsManager.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374224491440" ignored="false" />
+    <file path="/NewsManager.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377226412345" ignored="false" />
     <file path="E:/segtong/segtong/bin/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373008180175" ignored="false" />
     <file path="E:/segtong/segtong/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373008180175" ignored="false" />
     <file path="E:/segtong/segtong/build.gradle" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373008194659" ignored="false" />
@@ -72,7 +64,7 @@
     <file path="/styles.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373083109165" ignored="false" />
     <file path="/KrMainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374130548917" ignored="false" />
     <file path="/CsdnMain.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373103418148" ignored="false" />
-    <file path="/CsdnMainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373106105019" ignored="false" />
+    <file path="/CsdnMainActivity.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377226512090" ignored="false" />
     <file path="/krhandler.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1373986714365" ignored="false" />
     <file path="$USER_HOME$/Desktop/SlidingMenu-master/SlidingMenu-master/example/res/values/styles.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374033667525" ignored="false" />
     <file path="$USER_HOME$/Desktop/SlidingMenu-master/SlidingMenu-master/example/AndroidManifest.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1374033793126" ignored="false" />
@@ -83,6 +75,7 @@
     <file path="/SlideHolder.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377054527055" ignored="false" />
     <file path="/row_staggered_demo.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377141725659" ignored="false" />
     <file path="/StaggeredAdapter.java" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377072894601" ignored="false" />
+    <file path="/csdnmain.xml" changelist="ba4264ed-b346-4b30-8b13-636c123ca8cd" time="1377229045832" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +95,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -139,7 +132,7 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -149,14 +142,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="myslideActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java">
+      <file leaf-file-name="krhandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/joylee/handler/krhandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="47" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.77319586">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1060#1081#0" expanded="true" />
-              </folding>
+            <state line="33" column="22" selection-start="719" selection-end="719" vertical-scroll-proportion="0.48672566">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,9 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/joylee/handler/krhandler.java" />
-        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/KrService.java" />
-        <option value="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/src/com/agimind/widget/SlideHolder.java" />
         <option value="$PROJECT_DIR$/res/layout/head.xml" />
@@ -196,6 +183,9 @@
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/myslide.xml" />
         <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/joylee/business/NewsManager.java" />
+        <option value="$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/csdnmain.xml" />
       </list>
     </option>
   </component>
@@ -232,7 +222,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,10 +240,46 @@
               <option name="myItemId" value="CSDNHome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSDNHome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,8 +297,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -481,7 +507,10 @@
       <workItem from="1376910855634" duration="695000" />
       <workItem from="1377051487416" duration="15931000" />
       <workItem from="1377140670846" duration="3220000" />
-      <workItem from="1377143992405" duration="2798000" />
+      <workItem from="1377143992405" duration="3785000" />
+      <workItem from="1377224807219" duration="171000" />
+      <workItem from="1377225077757" duration="6354000" />
+      <workItem from="1377670755100" duration="477000" />
     </task>
     <task id="LOCAL-00001" summary="修改为从数据库查询">
       <created>1373039719879</created>
@@ -503,11 +532,15 @@
       <created>1377068624957</created>
       <updated>1377068624957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加图片瀑布流模块。">
+      <created>1377156880217</created>
+      <updated>1377156880217</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173426000" />
+    <option name="totallyTimeSpent" value="181415000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -531,30 +564,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29970974" sideWeight="0.59032714" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30523255" sideWeight="0.59032714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3744681" sideWeight="0.4724238" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288703" sideWeight="0.6716667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6059744" sideWeight="0.6415094" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28085107" sideWeight="0.56313497" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40992907" sideWeight="0.49854863" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40967283" sideWeight="0.5007257" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40851063" sideWeight="0.5007257" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257468" sideWeight="0.35994196" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928162" sideWeight="0.68428373" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.7617504" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39985487" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26124817" sideWeight="0.59032714" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2788051" sideWeight="0.43686503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2597968" sideWeight="0.7226173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27738264" sideWeight="0.43686503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29970974" sideWeight="0.7226173" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30478954" sideWeight="0.7226173" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288703" sideWeight="0.6716667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40992907" sideWeight="0.49854863" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -571,18 +604,18 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37411097" sideWeight="0.7750363" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31270358" sideWeight="0.50162864" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2502092" sideWeight="0.40166667" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30212766" sideWeight="0.56313497" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43243244" sideWeight="0.7387518" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257468" sideWeight="0.35994196" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928162" sideWeight="0.68428373" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.7617504" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39985487" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.7617504" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2619739" sideWeight="0.62588906" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30156472" sideWeight="0.43686503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -627,7 +660,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改slidemenu插件，新插件效果很好。导航移到底部了。" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加图片瀑布流模块。" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -646,6 +679,7 @@
     <MESSAGE value="添加服务、添加广播监听。" />
     <MESSAGE value="2013.8.19" />
     <MESSAGE value="修改slidemenu插件，新插件效果很好。导航移到底部了。" />
+    <MESSAGE value="增加图片瀑布流模块。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -655,23 +689,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/handler/krhandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="61" selection-start="2524" selection-end="2524" vertical-scroll-proportion="0.048672568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/joylee/csdnhome/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="170" selection-end="170" vertical-scroll-proportion="0.23012552" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/common/AsyncImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="345" selection-end="345" vertical-scroll-proportion="-0.87447697">
-          <folding />
-        </state>
+        <state line="16" column="31" selection-start="345" selection-end="345" vertical-scroll-proportion="-0.87447697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/origamilabs/library/views/ScrollerCompatIcs.java">
@@ -685,56 +705,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/head.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="0" selection-end="670" vertical-scroll-proportion="0.69014084" />
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="0" selection-end="670" vertical-scroll-proportion="0.69014084">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/row_staggered_demo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="14" selection-start="414" selection-end="414" vertical-scroll-proportion="0.53268766" />
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="414" selection-end="414" vertical-scroll-proportion="0.53268766">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/origamilabs/library/views/StaggeredGridView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="6" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-4.76082">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/csdnmain.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="426" selection-end="426" vertical-scroll-proportion="-10.153846">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+        <state line="76" column="6" selection-start="2843" selection-end="2843" vertical-scroll-proportion="-4.76082" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/JoyListView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="13" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="17" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="118" column="17" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -746,45 +744,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="37" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="class#MyHandler#0;class#CsdnMainActivity#0" expanded="false" />
-            <element signature="class#MyThread#0;class#CsdnMainActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="28" selection-start="2653" selection-end="2653" vertical-scroll-proportion="-6.6923075">
-          <folding>
-            <element signature="tag#ScrollView#0;tag#com.agimind.widget.SlideHolder#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="57" column="28" selection-start="2653" selection-end="2653" vertical-scroll-proportion="-6.6923075" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/myslide.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="48" selection-start="341" selection-end="341" vertical-scroll-proportion="0.3646409" />
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="48" selection-start="341" selection-end="341" vertical-scroll-proportion="0.3646409">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/myslideActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="47" selection-start="4014" selection-end="4014" vertical-scroll-proportion="0.77319586">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1060#1081#0" expanded="true" />
-          </folding>
+        <state line="83" column="47" selection-start="4014" selection-end="4014" vertical-scroll-proportion="3.6649485" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/business/NewsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="55" selection-start="4677" selection-end="4677" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/csdnmain.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="566" selection-end="566" vertical-scroll-proportion="0.72527474">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/csdnhome/CsdnMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="58" selection-start="3900" selection-end="3900" vertical-scroll-proportion="0.6777547" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joylee/handler/krhandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="22" selection-start="719" selection-end="719" vertical-scroll-proportion="0.48672566">
+          <folding />
         </state>
       </provider>
     </entry>

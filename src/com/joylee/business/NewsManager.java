@@ -104,6 +104,38 @@ public class NewsManager {
     }
 
 
+    //分页查询
+    public List<newsentity> GetList(String source,int pageindex,int pagesize) {
+        List<newsentity> list = new ArrayList<newsentity>();
+
+        String sql = "select * from news where source=? order  by newsid desc limit "+pagesize+" offset " +pageindex*pagesize;
+        Cursor result = dbHelper.query(sql, new String[]{source});
+        if (result.getCount() > 0) {
+            while (result.moveToNext()) {
+                newsentity info = new newsentity();
+                info.setNewsDatetime(result.getString(result
+                        .getColumnIndex("createtime")));
+                info.setTitle(result.getString(result
+                        .getColumnIndex("newstitle")));
+                info.setAnthor(result.getString(result
+                        .getColumnIndex("anthor")));
+                info.setDetail(result.getString(result
+                        .getColumnIndex("newsdetails")));
+                info.setUrl(result.getString(result
+                        .getColumnIndex("url")));
+                info.setNewsimage(result.getString(result
+                        .getColumnIndex("newsimage")));
+                info.setNewsid(result.getString(result
+                        .getColumnIndex("newsid")));
+                info.setSource(result.getString(result
+                        .getColumnIndex("source")));
+                list.add(info);
+            }
+        }
+        return list;
+    }
+
+
     //    获取最近更新的时间
     public String GetLastdate(String source) {
         String str = "";
