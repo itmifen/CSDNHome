@@ -163,7 +163,7 @@ public class myslideActivity  extends Activity {
 
         asyncImageLoader = new AsyncImageLoader(new Handler());
         gridView = (StaggeredGridView) this.findViewById(R.id.staggeredGridView1);
-         gridView.setSelectionToTop();
+
 
         myHandler = new MyHandler();
         MyThread m = new MyThread();
@@ -180,7 +180,7 @@ public class myslideActivity  extends Activity {
                 ImageView iv = (ImageView) view;
                 
                 imageLoader.displayImage(data.toString(), iv, options);
-                //loadImage(data.toString(), iv);
+               // loadImage(data.toString(), iv);
                 return true;
             }
             return false;
@@ -248,7 +248,7 @@ public class myslideActivity  extends Activity {
             adapter.setViewBinder(new MyViewBinder());
             gridView.setAdapter(adapter);
 
-            adapter.notifyDataSetChanged();
+          //  adapter.notifyDataSetChanged();
 
         }
 
@@ -257,13 +257,6 @@ public class myslideActivity  extends Activity {
 
     class MyThread implements Runnable {
         public void run() {
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
             Log.d("thread.......", "mThread........");
             Message msg = new Message();
             myslideActivity.this.myHandler.sendMessage(msg);

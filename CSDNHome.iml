@@ -16,6 +16,7 @@
     <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="library" name="actionbarsherlock" level="project" />
     <orderEntry type="library" name="slidemenu" level="project" />
+    <orderEntry type="library" name="universal-image-loader-1.8.6-with-sources" level="project" />
   </component>
 </module>
 
